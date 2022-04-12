@@ -27,43 +27,52 @@ function generateRandomNumber(num) {
         // use object item to add 
         switch(item) {
             case 'mood':
-                perfectCandle.push(`The perfect candle to create a "${moodRoom[item][option]}" ambiance in your `)
+                perfectCandle.push(`The perfect candle to create a ${moodRoom[item][option]} ambiance in your `)
                 break
             case 'room':
-                perfectCandle.push(`${moodRoom[item][option]}" would smell like `)
+                perfectCandle.push(`${moodRoom[item][option]} would smell like `)
                 break
             default:
             perfectCandle.push('Opps, please try again.')
         }
     }
 
+
     // Create 3 scents and add to output
 
-    for (let i = 0; i < 3, i++) {
+    for (let i = 0; i < 3; i++) {
 
-            //add description
-            let dOption = generateRandomNumber(scentNote[description].length)
-            perfectCandle.push(`${scentNote[description][dOption]}`)
-            
-            //add note
-            let nOption = generateRandomNumber(scentNote[notes].length)
-            perfectCandle.push(`${scentNote[notes][nOption]}`)
+        for(let item in scentNote) {
+        
+            let option = generateRandomNumber(scentNote[item].length)
+        
+            // use object item to add 
+            switch(item) {
+                case 'description':
+                    perfectCandle.push(`${scentNote[item][option]} `)
+                    break
+                case 'notes':
+                    perfectCandle.push(`${scentNote[item][option]}`)
+                    break
+                default:
+                perfectCandle.push('Opps, please try again.')
+            }
+        }
 
             switch(i) {
-                case '0':
+                case 0:
                     perfectCandle.push(`, `)
                     break
-                case '1':
-                    perfectCandle.push(`, and `)
+                case 1:
+                    perfectCandle.push(` and `)
                     break
-                case '2':
+                case 2:
                     perfectCandle.push(`.`)
                     break
                 default:
                     perfectCandle.push('.')
             }     
         }
-    }
 
 
 function createCandle(candle) {
