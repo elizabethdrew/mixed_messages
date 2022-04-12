@@ -79,11 +79,12 @@ function createCandle(candle) {
     console.log(formatted)
 }
 
-const finalCandle = createCandle(perfectCandle);
+let finalCandle = createCandle(perfectCandle);
 
-document.getElementsByClassName("message")[0].innerHTML = finalCandle();
+document.getElementsByClassName("candle").innerHTML = finalCandle;
 
 const button = document.getElementsByTagName("button")[0];
+
 button.addEventListener("click", () => {
-  document.getElementsByClassName("message")[0].innerHTML = finalCandle();
+  document.getElementsByClassName("candle").innerHTML = finalCandle;
 });
