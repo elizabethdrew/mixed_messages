@@ -65,3 +65,11 @@ function generateRandomNumber(num) {
         }
     }
 
+
+function createCandle(candle) {
+    const formatted = perfectCandle.join('')
+    console.log(formatted)
+}
+      
+createCandle(perfectCandle);
+
