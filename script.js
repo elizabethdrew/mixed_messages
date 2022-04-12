@@ -76,15 +76,8 @@ for (let i = 0; i < 3; i++) {
 
 function createCandle(candle) {
     const formatted = perfectCandle.join('')
-    console.log(formatted)
+    //console.log(formatted)
+    document.getElementsByClassName("candle")[0].innerHTML = formatted;
 }
 
-let finalCandle = createCandle(perfectCandle);
-
-document.getElementsByClassName("candle").innerHTML = finalCandle;
-
-const button = document.getElementsByTagName("button")[0];
-
-button.addEventListener("click", () => {
-  document.getElementsByClassName("candle").innerHTML = finalCandle;
-});
+createCandle(perfectCandle);
