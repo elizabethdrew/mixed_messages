@@ -43,15 +43,17 @@ for (let i = 0; i < 3; i++) {
 
     for(let item in scentNote) {
     
-        let option = generateRandomNumber(scentNote[item].length)
-    
+        let option = generateRandomNumber(scentNote[item].length-i)
+
         // use object item to add 
         switch(item) {
             case 'description':
                 perfectCandle.push(`${scentNote[item][option]} `)
+                scentNote[item].splice(option, 1)
                 break
             case 'notes':
                 perfectCandle.push(`${scentNote[item][option]}`)
+                scentNote[item].splice(option, 1)
                 break
             default:
                 perfectCandle.push('Opps, please try again.')
@@ -76,7 +78,7 @@ for (let i = 0; i < 3; i++) {
 
 function createCandle(candle) {
     const formatted = perfectCandle.join('')
-    //console.log(formatted)
+    console.log(formatted)
     document.getElementsByClassName("candle")[0].innerHTML = formatted;
 }
 
