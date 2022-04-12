@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Rubik+Moonrocks&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    background-color: #f5b342;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.top-tier p {
+    color: #f59342;
+    font-weight: bold;
+    padding: 0px 20px;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 50px;
+}
+
+.message {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+p.candle {
+    width: 70%;
+    margin: auto;
+}
+
+
+.footer {
+    margin: 0;
+    position: absolute;
+    bottom: 15vh;
+    height: 10vh;
+    justify-content: center;
+}
+
+button {
+    border: 2px solid white;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 50px;
+    margin: 2px 3px;
+    padding: 10px 50px;
+    font-size: 0.5em;
+    text-transform: lowercase;
+    font-weight: normal;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 10px 10px 10px 0 #f59342;
+}
+
+button:active {
+    color: #f59342;
+    background: white;
+}
+
+.info {
+    position: absolute;
+    align-self: end;
+    bottom: 10px;
+    margin: 50px;
+}
+
+.info a {
+    color: #fff;
+    background-color: #f59342;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.info:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}

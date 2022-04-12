@@ -12,7 +12,7 @@ const moodRoom = {
 
 //Scent Note Output
 const scentNote = {
-    description: ['floating clouds of', 'whisps of', 'fuzzy notes of', 'grounding', 'earthy', 'fresh', 'warm', 'exotic traces of', 'sweet sting of'],
+    description: ['floating clouds of', 'whisps of', 'fuzzy notes of', 'grounding', 'earthy', 'fresh', 'warm', 'exotic traces of', 'the sweet sting of'],
     notes: ['amber', 'bergamot', 'cedar', 'cinnamon', 'citrus', 'coffee', 'eucalyptus', 'grapefruit', 'grass', 'honey', 'jasmine', 'lavender', 'leather', 'lemon', 'mint', 'musk', 'patchouli', 'pine', 'rain', 'pumpkin', 'rose', 'sage', 'vanilla']
 }
 
