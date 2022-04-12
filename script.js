@@ -79,5 +79,10 @@ function createCandle(candle) {
     console.log(formatted)
 }
       
-createCandle(perfectCandle);
 
+document.getElementsByClassName("message")[0].innerHTML = createCandle(perfectCandle);
+
+const button = document.getElementsByTagName("button")[0];
+button.addEventListener("click", () => {
+  document.getElementsByClassName("message")[0].innerHTML = createCandle(perfectCandle);
+});
