@@ -80,7 +80,7 @@ function createCandle(candle) {
 }
       
 
-document.getElementsByClassName("message")[0].innerHTML = createCandle(perfectCandle);
+document.getElementsByClassName("message")[0].innerHTML = "test";
 
 const button = document.getElementsByTagName("button")[0];
 button.addEventListener("click", () => {
